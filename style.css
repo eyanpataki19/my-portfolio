@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Black background */
+    color: #FFFFFF; /* White text for contrast */
+}
+
+header {
+    background: linear-gradient(to right, #000, #228B22); /* Gradient from Black to Green */
+    color: #FFD700; /* Yellow text */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding-top: 60px; /* Adjust padding to ensure content is not hidden behind the fixed header */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right, #228B22, #FFD700); /* Gradient from Green to Yellow */
+    padding: 20px;
+    border-radius: 10px;
+    color: #000; /* Black text */
+}
+
+#hero .hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero h1 {
+    background: linear-gradient(to right, #FFD700, #228B22); /* Gradient from Yellow to Green */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#hero img {
+    max-width: 200px; /* Adjust as needed */
+    border-radius: 50%; /* Circular frame */
+    border: 5px solid; /* Border width */
+    border-image: linear-gradient(to bottom right, #FFD700, #228B22) 1; /* Gradient border */
+}
+
+footer {
+    background: linear-gradient(to right, #000, #FFD700); /* Gradient from Black to Yellow */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+}
